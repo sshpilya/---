@@ -172,11 +172,8 @@ function applySearch() {
 
 searchButton.addEventListener("click", applySearch);
 searchInput.addEventListener("search", applySearch);
-searchInput.addEventListener("keypress", (event) => {
-    if (event.key === "Enter") {
-      applySearch();
-    }
-});
+
+
 
 const sortControl = document.querySelector("#sort");
 sortControl.addEventListener("change", (event) => {
